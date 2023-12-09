@@ -537,18 +537,20 @@ img {
 
 .modal-comment {
   width: 360px;
-  height: 336px;
+  height: 120px;
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
   /*height: 336px;*/
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
   align-items: top;
   resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   outline: 0px solid transparent;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment::placeholder {
@@ -557,7 +559,9 @@ img {
 .modal-comment:focus {
   border-color: #4d5ae5;
 }
-
+.modal-field {
+  margin-bottom: 24px;
+}
 .review-form-own-checkbox {
   display: inline-flex;
   width: 16px;
@@ -565,7 +569,7 @@ img {
   border-radius: 2px;
   background-color: #e7e9fc;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
@@ -576,7 +580,8 @@ img {
 .review-form-checkbox:checked
   + .review-form-checkbox-label
   > .review-form-own-checkbox {
-  fill: #404bbf;
+  background-color: #404bbf;
+  fill: #f4f4fd;
   border: none;
 }
 .review-form-checkbox:focus
@@ -602,6 +607,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+.police-reference {
+  color: #4d5ae5;
+}
 .review-form-submit-btn {
   display: block;
   min-width: 169px;
@@ -613,13 +621,14 @@ img {
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin: 24px auto;
+  border: none;
   color: #ffffff;
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
