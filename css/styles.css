@@ -560,8 +560,15 @@ img {
   border-color: #4d5ae5;
 }
 .modal-field {
+  margin-bottom: 8px;
+}
+.comment-wrapper {
+  margin-bottom: 16px;
+}
+.checkbox-wrapper {
   margin-bottom: 24px;
 }
+
 .review-form-own-checkbox {
   display: inline-flex;
   width: 16px;
